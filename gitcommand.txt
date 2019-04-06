@@ -1,0 +1,537 @@
+
+PS C:\Users\duy12\Desktop\Lab1> git add .
+PS C:\Users\duy12\Desktop\Lab1> git commit "sua lan 13"
+error: pathspec 'sua lan 13' did not match any file(s) known to git
+PS C:\Users\duy12\Desktop\Lab1> git commit -m  "sua lan 13"
+[master ceefa11] sua lan 13
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\duy12\Desktop\Lab1> git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+PS C:\Users\duy12\Desktop\Lab1> git add .
+PS C:\Users\duy12\Desktop\Lab1> git commit -m sua lan 13
+error: pathspec 'lan' did not match any file(s) known to git
+error: pathspec '13' did not match any file(s) known to git
+PS C:\Users\duy12\Desktop\Lab1> git commit -m "sua lan 13"
+[master b5d332a] sua lan 13
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\duy12\Desktop\Lab1> ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (C:\Users\duy12/.ssh/id_rsa): C:\Users\duy12/.ssh/ssh2
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in C:\Users\duy12/.ssh/ssh2.
+Your public key has been saved in C:\Users\duy12/.ssh/ssh2.pub.
+The key fingerprint is:
+SHA256:odvZH4G0WbRvTMEL6LaYVh2XsnZi0UffGAl42wBvzNM your_email@example.com
+The key's randomart image is:
++---[RSA 4096]----+
+|          .+o+o+.|
+|          o=Bo*++|
+|        ...oO@Eoo|
+|       . o+*B=+  |
+|      . S=++.o+  |
+|       o+o.  o   |
+|      ..o . .    |
+|           . .   |
+|            .    |
++----[SHA256]-----+
+PS C:\Users\duy12\Desktop\Lab1> ssh-add ~/.ssh/ssh2
+Error connecting to agent: No such file or directory
+PS C:\Users\duy12\Desktop\Lab1> ssh-add ~/.ssh/ssh2
+Error connecting to agent: No such file or directory
+PS C:\Users\duy12\Desktop\Lab1> git remote add origin https://github.com/PHxxDragon/demoProject
+PS C:\Users\duy12\Desktop\Lab1> git remote add origin https://github.com/PHxxDragon/demoProject.git
+fatal: remote origin already exists.
+PS C:\Users\duy12\Desktop\Lab1> git remote add demoProject https://github.com/PHxxDragon/demoProject.git
+PS C:\Users\duy12\Desktop\Lab1> git remote
+demoProject
+origin
+PS C:\Users\duy12\Desktop\Lab1> git remote -v
+demoProject     https://github.com/PHxxDragon/demoProject.git (fetch)
+demoProject     https://github.com/PHxxDragon/demoProject.git (push)
+origin  https://github.com/PHxxDragon/demoProject (fetch)
+origin  https://github.com/PHxxDragon/demoProject (push)
+PS C:\Users\duy12\Desktop\Lab1> git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+PS C:\Users\duy12\Desktop\Lab1> git push --set-upstream origin master
+Enumerating objects: 68, done.
+Counting objects: 100% (68/68), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (54/54), done.
+Writing objects: 100% (68/68), 20.58 KiB | 167.00 KiB/s, done.
+Total 68 (delta 23), reused 0 (delta 0)
+remote: Resolving deltas: 100% (23/23), done.
+To https://github.com/PHxxDragon/demoProject
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+PS C:\Users\duy12\Desktop\Lab1> git reflog
+b5d332a (HEAD -> master, origin/master) HEAD@{0}: commit: sua lan 13
+ceefa11 HEAD@{1}: commit: sua lan 13
+5aecd68 HEAD@{2}: commit: sua lan 12
+ecc81d9 HEAD@{3}: commit: sua lan cuoi
+718fe87 HEAD@{4}: reset: moving to HEAD
+718fe87 HEAD@{5}: reset: moving to HEAD
+718fe87 HEAD@{6}: commit: sua lan 11
+2323010 HEAD@{7}: commit: sua lan 10
+ab6216b HEAD@{8}: commit: sua lan 9
+3138ad9 HEAD@{9}: commit: sua lan 8
+6cceedd HEAD@{10}: commit: sua lan 7
+c63a246 HEAD@{11}: commit: sua lan 6
+5ea8f03 HEAD@{12}: commit: sua lan 5
+01382f9 HEAD@{13}: reset: moving to 0138
+01382f9 HEAD@{14}: reset: moving to HEAD
+01382f9 HEAD@{15}: reset: moving to 0138
+948d64e HEAD@{16}: reset: moving to 948d
+948d64e HEAD@{17}: reset: moving to HEAD
+948d64e HEAD@{18}: reset: moving to 948d
+01382f9 HEAD@{19}: commit: sua lan 4
+068c5a5 HEAD@{20}: reset: moving to HEAD
+068c5a5 HEAD@{21}: commit: sua lan 3
+948d64e HEAD@{22}: reset: moving to HEAD
+948d64e HEAD@{23}: reset: moving to HEAD
+948d64e HEAD@{24}: commit: sua lan 2
+aa60762 HEAD@{25}: commit: sua lan 2
+0659627 HEAD@{26}: commit: sua lan 1
+8ebb596 HEAD@{27}: commit (initial): 4/6/2019
+PS C:\Users\duy12\Desktop\Lab1> git log --reflog
+commit b5d332af7dda727a9afb91f5fae9059159e41fab (HEAD -> master, origin/master)
+Author: Nguyễn Đỗ Quốc Duy <duy12345616@gmail.com>
+Date:   Sat Apr 6 15:20:15 2019 +0700
+
+    sua lan 13
+
+commit ceefa111263551dbfcf326e9006518fcfdfd8434
+Author: Nguyễn Đỗ Quốc Duy <duy12345616@gmail.com>
+Date:   Sat Apr 6 15:19:18 2019 +0700
+
+    sua lan 13
+
+commit 5aecd689d8eff443ccac1926ee2a563c5a13f8d0
+Author: Nguyễn Đỗ Quốc Duy <duy12345616@gmail.com>
+Date:   Sat Apr 6 14:56:50 2019 +0700
+
+    sua lan 12
+
+commit ecc81d92febba3b1bac6b96d010897ab2c7e2b01
+Author: Nguyễn Đỗ Quốc Duy <duy12345616@gmail.com>
+Date:   Sat Apr 6 14:55:28 2019 +0700
+commit b5d332af7dda727a9afb91f5fae9059159e41fab (HEAD -> master, origin/master)
+Author: Nguyễn Đỗ Quốc Duy <duy12345616@gmail.com>
+Date:   Sat Apr 6 15:20:15 2019 +0700
+
+    sua lan 13
+
+commit ceefa111263551dbfcf326e9006518fcfdfd8434
+Author: Nguyễn Đỗ Quốc Duy <duy12345616@gmail.com>
+Date:   Sat Apr 6 15:19:18 2019 +0700
+
+    sua lan 13
+
+commit 5aecd689d8eff443ccac1926ee2a563c5a13f8d0
+Author: Nguyễn Đỗ Quốc Duy <duy12345616@gmail.com>
+Date:   Sat Apr 6 14:56:50 2019 +0700
+
+    sua lan 12
+
+commit ecc81d92febba3b1bac6b96d010897ab2c7e2b01
+Author: Nguyễn Đỗ Quốc Duy <duy12345616@gmail.com>
+Date:   Sat Apr 6 14:55:28 2019 +0700
+
+    sua lan cuoi
+
+commit cb2afd59bc9936c5f0527527fb5e7a1b19663a31 (refs/stash)
+Merge: 718fe87 b5fbbd6
+Author: Nguyễn Đỗ Quốc Duy <duy12345616@gmail.com>
+Date:   Sat Apr 6 14:54:35 2019 +0700
+
+    WIP on master: 718fe87 sua lan 11
+
+commit b5fbbd6ef4943618aa441d076413424c34d6f67a
+Author: Nguyễn Đỗ Quốc Duy <duy12345616@gmail.com>
+Date:   Sat Apr 6 14:54:35 2019 +0700
+
+    index on master: 718fe87 sua lan 11
+
+commit 46535748e560da75d22aaca0eb7c57403b950bb0
+Merge: 718fe87 017bb30
+Author: Nguyễn Đỗ Quốc Duy <duy12345616@gmail.com>
+Date:   Sat Apr 6 14:52:00 2019 +0700
+
+    WIP on master: 718fe87 sua lan 11
+
+commit 017bb305d82c037a70326ce04ab9ce3a182c9a7f
+Author: Nguyễn Đỗ Quốc Duy <duy12345616@gmail.com>
+Date:   Sat Apr 6 14:52:00 2019 +0700
+
+    index on master: 718fe87 sua lan 11
+
+commit 718fe8799c172e308198842340dbc48ff2ba4463
+Author: Nguyễn Đỗ Quốc Duy <duy12345616@gmail.com>
+Date:   Sat Apr 6 14:49:19 2019 +0700
+
+    sua lan 11
+
+commit 232301054f6330192f6ae7cdf130fc56cf9aefc2
+Author: Nguyễn Đỗ Quốc Duy <duy12345616@gmail.com>
+Date:   Sat Apr 6 14:49:02 2019 +0700
+
+    sua lan 10
+
+commit ab6216bd2b618b57296b1fd42ab9632a765b6250
+Author: Nguyễn Đỗ Quốc Duy <duy12345616@gmail.com>
+Date:   Sat Apr 6 14:48:48 2019 +0700
+
+    sua lan 9
+
+commit 3138ad9200fb91ff9641ca6a1d28452fb4f9110e
+Author: Nguyễn Đỗ Quốc Duy <duy12345616@gmail.com>
+Date:   Sat Apr 6 14:48:34 2019 +0700
+
+    sua lan 8
+
+commit 6cceedd93b76e644628cc3bb5b404e116c067f0b
+Author: Nguyễn Đỗ Quốc Duy <duy12345616@gmail.com>
+Date:   Sat Apr 6 14:48:19 2019 +0700
+
+    sua lan 7
+
+commit c63a2464875ec0bd1579f5bfd7c4c0723c66071b
+Author: Nguyễn Đỗ Quốc Duy <duy12345616@gmail.com>
+Date:   Sat Apr 6 14:47:53 2019 +0700
+
+    sua lan 6
+
+commit 5ea8f03fb8dbe6e5da31ae5bf1b3bc5618e27da2
+Author: Nguyễn Đỗ Quốc Duy <duy12345616@gmail.com>
+Date:   Sat Apr 6 14:47:33 2019 +0700
+
+    sua lan 5
+
+commit e6e8ecd09e6bc1258e455e69e612c54472f5b45a
+Merge: 01382f9 f4b0c1e
+Author: Nguyễn Đỗ Quốc Duy <duy12345616@gmail.com>
+Date:   Sat Apr 6 14:45:13 2019 +0700
+
+    WIP on master: 01382f9 sua lan 4
+
+commit f4b0c1ea0c01c602f61719de2c470daca3660e4b
+Author: Nguyễn Đỗ Quốc Duy <duy12345616@gmail.com>
+Date:   Sat Apr 6 14:45:13 2019 +0700
+
+    index on master: 01382f9 sua lan 4
+
+commit c916c354a8687b08c390e4ac1f4f81ab7523cca4
+Merge: 948d64e 944827e
+Author: Nguyễn Đỗ Quốc Duy <duy12345616@gmail.com>
+Date:   Sat Apr 6 14:42:30 2019 +0700
+
+    WIP on master: 948d64e sua lan 2
+
+commit 944827e0b596238dcb9fff66c1bb92bebfbdca07
+Author: Nguyễn Đỗ Quốc Duy <duy12345616@gmail.com>
+Date:   Sat Apr 6 14:42:30 2019 +0700
+
+    index on master: 948d64e sua lan 2
+
+commit 01382f912dfba4faec320cc2fbf4d1240bcbad64
+Author: Nguyễn Đỗ Quốc Duy <duy12345616@gmail.com>
+Date:   Sat Apr 6 14:40:41 2019 +0700
+
+    sua lan 4
+
+commit a7886e1bb634c992af74ca8c8c722dd399081dea
+Merge: 068c5a5 1555c53
+Author: Nguyễn Đỗ Quốc Duy <duy12345616@gmail.com>
+Date:   Sat Apr 6 14:25:58 2019 +0700
+
+    WIP on master: 068c5a5 sua lan 3
+
+commit 1555c534e3a0de78a9fc6deb659ae608a388ddc6
+Author: Nguyễn Đỗ Quốc Duy <duy12345616@gmail.com>
+Date:   Sat Apr 6 14:25:58 2019 +0700
+
+    index on master: 068c5a5 sua lan 3
+
+commit 068c5a59396eb0ccf54b1cd3e877f58d259295fc
+Author: Nguyễn Đỗ Quốc Duy <duy12345616@gmail.com>
+Date:   Sat Apr 6 14:25:32 2019 +0700
+
+    sua lan 3
+
+commit d6e49c299cb0701455631274ec5df2152fb9587f
+PS C:\Users\duy12\Desktop\Lab1> git commit -m "sua lan 14"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+        modified:   text3.txt
+
+no changes added to commit
+PS C:\Users\duy12\Desktop\Lab1> git add .
+PS C:\Users\duy12\Desktop\Lab1> git commit -m "sua lan 14"
+[master 0c2af06] sua lan 14
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\duy12\Desktop\Lab1> git push --set-upstream origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 381 bytes | 95.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/PHxxDragon/demoProject
+   b5d332a..0c2af06  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+PS C:\Users\duy12\Desktop\Lab1> git add .
+PS C:\Users\duy12\Desktop\Lab1> git commit -m "sua lan ạ"
+[master 7520450] sua lan ạ
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text18.txt
+PS C:\Users\duy12\Desktop\Lab1> git push --set-upstream origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 316 bytes | 105.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/PHxxDragon/demoProject
+   0c2af06..7520450  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+PS C:\Users\duy12\Desktop\Lab1> git remote rm origin
+PS C:\Users\duy12\Desktop\Lab1> git remove -v
+git: 'remove' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+PS C:\Users\duy12\Desktop\Lab1> git remote -v
+demoProject     https://github.com/PHxxDragon/demoProject.git (fetch)
+demoProject     https://github.com/PHxxDragon/demoProject.git (push)
+PS C:\Users\duy12\Desktop\Lab1> git remote rm demoProject
+PS C:\Users\duy12\Desktop\Lab1> git remote add origin git@github.com:PHxxDragon/demoProject.git
+PS C:\Users\duy12\Desktop\Lab1> git remote -v
+origin  git@github.com:PHxxDragon/demoProject.git (fetch)
+origin  git@github.com:PHxxDragon/demoProject.git (push)
+PS C:\Users\duy12\Desktop\Lab1> git add .
+PS C:\Users\duy12\Desktop\Lab1> git commit -m "sua lan 16"
+[master 560ad20] sua lan 16
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 textslkdfjsdlkfjsd
+PS C:\Users\duy12\Desktop\Lab1> git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+PS C:\Users\duy12\Desktop\Lab1> git push --set-upstream origin master
+The authenticity of host 'github.com (13.229.188.59)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,13.229.188.59' (RSA) to the list of known hosts.
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 296 bytes | 98.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:PHxxDragon/demoProject.git
+   7520450..560ad20  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+PS C:\Users\duy12\Desktop\Lab1> git push
+Everything up-to-date
+PS C:\Users\duy12\Desktop\Lab1> git add .
+PS C:\Users\duy12\Desktop\Lab1> git remote -v
+origin  git@github.com:PHxxDragon/demoProject.git (fetch)
+origin  git@github.com:PHxxDragon/demoProject.git (push)
+PS C:\Users\duy12\Desktop\Lab1> git commit -m "sua lan 16"
+[master c20f892] sua lan 16
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text20
+PS C:\Users\duy12\Desktop\Lab1> git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 305 bytes | 76.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:PHxxDragon/demoProject.git
+   560ad20..c20f892  master -> master
+PS C:\Users\duy12\Desktop\Lab1> git remote rm origin
+PS C:\Users\duy12\Desktop\Lab1> git remote add origin https://github.com/PHxxDragon/demoProject
+PS C:\Users\duy12\Desktop\Lab1> git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+PS C:\Users\duy12\Desktop\Lab1> git push --set-upstream origin master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+PS C:\Users\duy12\Desktop\Lab1> git push
+Everything up-to-date
+PS C:\Users\duy12\Desktop\Lab1> git add .
+PS C:\Users\duy12\Desktop\Lab1> git commit -m "sua lan 17"
+[master 1d121e6] sua lan 17
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 lfjdklsfjs
+PS C:\Users\duy12\Desktop\Lab1> git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 285 bytes | 95.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/PHxxDragon/demoProject
+   c20f892..1d121e6  master -> master
+PS C:\Users\duy12\Desktop\Lab1> git remote rm origin
+PS C:\Users\duy12\Desktop\Lab1> git remote add origin git@github.com:PHxxDragon/demoProject.git
+PS C:\Users\duy12\Desktop\Lab1> git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+PS C:\Users\duy12\Desktop\Lab1> git push --set-upstream origin master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+PS C:\Users\duy12\Desktop\Lab1> git add .
+PS C:\Users\duy12\Desktop\Lab1> git commit -m "sua lan 18"
+[master eb562fa] sua lan 18
+ 1 file changed, 1 insertion(+)
+ create mode 100644 fsdklfj
+PS C:\Users\duy12\Desktop\Lab1> git push
+Warning: Permanently added the RSA host key for IP address '13.250.177.223' to the list of known hosts.
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 298 bytes | 74.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:PHxxDragon/demoProject.git
+   1d121e6..eb562fa  master -> master
+PS C:\Users\duy12\Desktop\Lab1> git add .
+PS C:\Users\duy12\Desktop\Lab1> git commit -m "sua lan 22"
+[master 8cebcd9] sua lan 22
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\duy12\Desktop\Lab1> git push
+To github.com:PHxxDragon/demoProject.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'git@github.com:PHxxDragon/demoProject.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\duy12\Desktop\Lab1> git pull
+Warning: Permanently added the RSA host key for IP address '52.74.223.119' to the list of known hosts.
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From github.com:PHxxDragon/demoProject
+   eb562fa..83615eb  master     -> origin/master
+Auto-merging text1.txt
+CONFLICT (content): Merge conflict in text1.txt
+Automatic merge failed; fix conflicts and then commit the result.
+PS C:\Users\duy12\Desktop\Lab1> git add .
+PS C:\Users\duy12\Desktop\Lab1> git commit -m "sua lan 23"
+[master 18de36a] sua lan 23
+PS C:\Users\duy12\Desktop\Lab1> git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 606 bytes | 121.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To github.com:PHxxDragon/demoProject.git
+   83615eb..18de36a  master -> master
+PS C:\Users\duy12\Desktop\Lab1>
+PS C:\Users\duy12\Desktop\Lab1>
+PS C:\Users\duy12\Desktop\Lab1> git push origin master
+Everything up-to-date
+PS C:\Users\duy12\Desktop\Lab1> git pull
+Already up to date.
+PS C:\Users\duy12\Desktop\Lab1> git add .
+PS C:\Users\duy12\Desktop\Lab1> git commit -m "sua lan 24"
+[master c3ace9e] sua lan 24
+ 2 files changed, 2 insertions(+)
+PS C:\Users\duy12\Desktop\Lab1> git push
+Enumerating objects: 7, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 341 bytes | 68.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:PHxxDragon/demoProject.git
+   18de36a..c3ace9e  master -> master
+PS C:\Users\duy12\Desktop\Lab1> git reflog
+c3ace9e (HEAD -> master, origin/master) HEAD@{0}: commit: sua lan 24
+18de36a HEAD@{1}: commit (merge): sua lan 23
+8cebcd9 HEAD@{2}: commit: sua lan 22
+eb562fa HEAD@{3}: commit: sua lan 18
+1d121e6 HEAD@{4}: commit: sua lan 17
+c20f892 HEAD@{5}: commit: sua lan 16
+560ad20 HEAD@{6}: commit: sua lan 16
+7520450 HEAD@{7}: commit: sua lan ạ
+0c2af06 HEAD@{8}: commit: sua lan 14
+b5d332a HEAD@{9}: commit: sua lan 13
+ceefa11 HEAD@{10}: commit: sua lan 13
+5aecd68 HEAD@{11}: commit: sua lan 12
+ecc81d9 HEAD@{12}: commit: sua lan cuoi
+718fe87 HEAD@{13}: reset: moving to HEAD
+718fe87 HEAD@{14}: reset: moving to HEAD
+718fe87 HEAD@{15}: commit: sua lan 11
+2323010 HEAD@{16}: commit: sua lan 10
+ab6216b HEAD@{17}: commit: sua lan 9
+3138ad9 HEAD@{18}: commit: sua lan 8
+6cceedd HEAD@{19}: commit: sua lan 7
+c3ace9e (HEAD -> master, origin/master) HEAD@{0}: commit: sua lan 24
+18de36a HEAD@{1}: commit (merge): sua lan 23
+8cebcd9 HEAD@{2}: commit: sua lan 22
+eb562fa HEAD@{3}: commit: sua lan 18
+1d121e6 HEAD@{4}: commit: sua lan 17
+c20f892 HEAD@{5}: commit: sua lan 16
+560ad20 HEAD@{6}: commit: sua lan 16
+7520450 HEAD@{7}: commit: sua lan ạ
+0c2af06 HEAD@{8}: commit: sua lan 14
+b5d332a HEAD@{9}: commit: sua lan 13
+ceefa11 HEAD@{10}: commit: sua lan 13
+5aecd68 HEAD@{11}: commit: sua lan 12
+ecc81d9 HEAD@{12}: commit: sua lan cuoi
+718fe87 HEAD@{13}: reset: moving to HEAD
+718fe87 HEAD@{14}: reset: moving to HEAD
+718fe87 HEAD@{15}: commit: sua lan 11
+2323010 HEAD@{16}: commit: sua lan 10
+ab6216b HEAD@{17}: commit: sua lan 9
+3138ad9 HEAD@{18}: commit: sua lan 8
+6cceedd HEAD@{19}: commit: sua lan 7
+c63a246 HEAD@{20}: commit: sua lan 6
+5ea8f03 HEAD@{21}: commit: sua lan 5
+01382f9 HEAD@{22}: reset: moving to 0138
+01382f9 HEAD@{23}: reset: moving to HEAD
+01382f9 HEAD@{24}: reset: moving to 0138
+948d64e HEAD@{25}: reset: moving to 948d
+948d64e HEAD@{26}: reset: moving to HEAD
+948d64e HEAD@{27}: reset: moving to 948d
+01382f9 HEAD@{28}: commit: sua lan 4
+068c5a5 HEAD@{29}: reset: moving to HEAD
+068c5a5 HEAD@{30}: commit: sua lan 3
+948d64e HEAD@{31}: reset: moving to HEAD
+948d64e HEAD@{32}: reset: moving to HEAD
+948d64e HEAD@{33}: commit: sua lan 2
+aa60762 HEAD@{34}: commit: sua lan 2
+0659627 HEAD@{35}: commit: sua lan 1
+8ebb596 HEAD@{36}: commit (initial): 4/6/2019
+PS C:\Users\duy12\Desktop\Lab1>
